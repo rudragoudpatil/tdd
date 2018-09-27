@@ -2,7 +2,6 @@
 
 namespace AppBundle\MultiCurrencyMoney;
 
-
 class Money
 {
     protected $amount;
@@ -31,7 +30,8 @@ class Money
         $this->shares = $shares;
     }
 
-    public function getTotalMoney(){
+    public function getTotalMoney()
+    {
         return $this->getAmount() * $this->getShares();
     }
 }

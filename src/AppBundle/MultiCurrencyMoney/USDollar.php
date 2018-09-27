@@ -2,7 +2,6 @@
 
 namespace AppBundle\MultiCurrencyMoney;
 
-
 class USDollar extends Money
 {
     private $currencyString = "USD";

@@ -13,7 +13,8 @@ use PHPUnit\Framework\TestCase;
 
 class FibonacciTest extends TestCase
 {
-    public function testFibanocciZero(){
+    public function testFibanocciZero()
+    {
         //Arrange
         $expectedValue = 0;
         $fibanocciTestInstance = new Fibonacci();
@@ -22,10 +23,11 @@ class FibonacciTest extends TestCase
         $actualValue = $fibanocciTestInstance->getFibanocciResult(0);
 
         //Assert
-        $this->assertSame($expectedValue,$actualValue);
+        $this->assertSame($expectedValue, $actualValue);
     }
 
-    public function testFibanocciOne(){
+    public function testFibanocciOne()
+    {
         //Arrange
         $expectedValue = 1;
         $fibanocciTestInstance = new Fibonacci();
@@ -34,10 +36,11 @@ class FibonacciTest extends TestCase
         $actualValue = $fibanocciTestInstance->getFibanocciResult(1);
 
         //Assert
-        $this->assertSame($expectedValue,$actualValue);
+        $this->assertSame($expectedValue, $actualValue);
     }
 
-    public function testFibanocciTwo(){
+    public function testFibanocciTwo()
+    {
         //Arrange
         $expectedValue = 2;
         $fibanocciTestInstance = new Fibonacci();
@@ -46,10 +49,11 @@ class FibonacciTest extends TestCase
         $actualValue = $fibanocciTestInstance->getFibanocciResult(2);
 
         //Assert
-        $this->assertSame($expectedValue,$actualValue);
+        $this->assertSame($expectedValue, $actualValue);
     }
 
-    public function testFibanocciThree(){
+    public function testFibanocciThree()
+    {
         //Arrange
         $expectedValue = 4;
         $fibanocciTestInstance = new Fibonacci();
@@ -58,10 +62,11 @@ class FibonacciTest extends TestCase
         $actualValue = $fibanocciTestInstance->getFibanocciResult(3);
 
         //Assert
-        $this->assertSame($expectedValue,$actualValue);
+        $this->assertSame($expectedValue, $actualValue);
     }
 
-    public function testFibanocciFour(){
+    public function testFibanocciFour()
+    {
         //Arrange
         $expectedValue = 7;
         $fibanocciTestInstance = new Fibonacci();
@@ -70,10 +75,11 @@ class FibonacciTest extends TestCase
         $actualValue = $fibanocciTestInstance->getFibanocciResult(4);
 
         //Assert
-        $this->assertSame($expectedValue,$actualValue);
+        $this->assertSame($expectedValue, $actualValue);
     }
 
-    public function testFibanocciFive(){
+    public function testFibanocciFive()
+    {
         //Arrange
         $expectedValue = 12;
         $fibanocciTestInstance = new Fibonacci();
@@ -82,10 +88,11 @@ class FibonacciTest extends TestCase
         $actualValue = $fibanocciTestInstance->getFibanocciResult(5);
 
         //Assert
-        $this->assertSame($expectedValue,$actualValue);
+        $this->assertSame($expectedValue, $actualValue);
     }
 
-    public function testFibanocciSix(){
+    public function testFibanocciSix()
+    {
         //Arrange
         $expectedValue = 20;
         $fibanocciTestInstance = new Fibonacci();
@@ -94,7 +101,6 @@ class FibonacciTest extends TestCase
         $actualValue = $fibanocciTestInstance->getFibanocciResult(6);
 
         //Assert
-        $this->assertSame($expectedValue,$actualValue);
+        $this->assertSame($expectedValue, $actualValue);
     }
 }
-

@@ -2,7 +2,6 @@
 
 namespace AppBundle\MultiCurrencyMoney;
 
-
 class ConvertCurrency
 {
     private $convertArray = [
@@ -10,10 +9,11 @@ class ConvertCurrency
         ["USD","AUD","0.2"]
     ];
 
-    public function multiplyRates(Money $money){
-        if($this->convertArray[0][0] == $money->getCurrencyString()){
+    public function multiplyRates(Money $money)
+    {
+        if ($this->convertArray[0][0] == $money->getCurrencyString()) {
             return ($money->getTotalMoney() * $this->convertArray[0][2]);
-        }else{
+        } else {
             return ($money->getTotalMoney() * $this->convertArray[1][2]);
         }
     }

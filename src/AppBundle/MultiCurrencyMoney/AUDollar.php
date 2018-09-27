@@ -2,7 +2,6 @@
 
 namespace AppBundle\MultiCurrencyMoney;
 
-
 class AUDollar extends Money
 {
     private $currencyString = "AUD";
@@ -11,5 +10,4 @@ class AUDollar extends Money
     {
         return $this->currencyString;
     }
-
 }
